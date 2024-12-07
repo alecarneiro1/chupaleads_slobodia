@@ -1,0 +1,28 @@
+<!-- views/consultas.ejs -->
+<%- include('partials/headerPartial') %>
+
+<div id="container_escolha_consulta">
+    <h1>Consultas:</h1>
+    <div id="container_consultas">
+        <a href="#" class="item_loop_consulta">Nome da consulta</a>
+        <button id="btn-nova-consulta">Criar nova consulta</button>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+    <div class="modal" style="background:#fff; padding:20px; border-radius:5px; width:300px;">
+        <h2>Criar Nova Consulta</h2>
+        <label for="input-nome">Título da consulta:</label><br/>
+        <input type="text" id="input-nome" placeholder="Digite o título" style="width:100%; margin-bottom:10px; padding:5px;" /><br/>
+
+        <label for="input-descricao">Descrição:</label><br/>
+        <textarea id="input-descricao" placeholder="Digite a descrição" style="width:100%; margin-bottom:10px; padding:5px;"></textarea><br/>
+
+        <button id="btn-salvar">Salvar</button>
+        <button id="btn-cancelar">Cancelar</button>
+    </div>
+</div>
+
+
+
+<%- include('partials/footerPartial') %>
